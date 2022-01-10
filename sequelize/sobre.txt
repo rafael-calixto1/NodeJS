@@ -1,5 +1,0 @@
-O Express é um freamwork minimalista que facilita a criação de uma aplicação back end com praticidade e incrementando funcionalidades.
-para usa-lo:
-1-)Entre no terminal e encontre o diretório que deseja usar o freamwork
-
-2-)npm install express --save
