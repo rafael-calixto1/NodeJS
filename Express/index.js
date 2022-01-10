@@ -2,14 +2,26 @@ const express = require("express");
 const app = express();
 
 //rota principal da aplicacao "/", que recebe uma funcao de callback que recebe os parametros de requisição e respostax
-app.get("/", function(req, res){
+/*app.get("/", function(req, res){
      res.send("Seja Bem vindo ao meu app");
+});*/
+
+
+//obtem o arquivo html a partir da raiz de onde esta o arquivo js
+app.get("/", function(req, res){
+     res.sendFile(__dirname + "/html/index.html")
 });
 
+
 //cria um caminho localhost:8081/sobre
-app.get("/sobre", function(req, res){
+/*app.get("/sobre", function(req, res){
      res.send("Sobre meu Aplicativo");
-})
+})*/
+
+
+app.get("/sobre", function(req, res){
+     res.sendFile(__dirname + "/html/sobre.html")
+});
 
 app.get("/blog", function(req, res){
      res.send("em vindo ao meu blog");
