@@ -1,0 +1,2 @@
+baixei o nodemon, que roda uma aplicacao Javascript, busca novos trechos e atualiza a pagina automaticamente
+Para usar basta ir para o diretorio desejado no terminal e digitar o nome do arquivo
