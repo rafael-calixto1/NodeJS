@@ -4,6 +4,36 @@ const sequelize = new Sequelize('sequelizeTeste', 'root', '1234', {
     dialect: 'mysql'
 });
 
+
+//O código já foi executado
+    /*const Postagem = sequelize.define('postagens', {
+        titulo: {
+            type: Sequelize.STRING
+        }, 
+        conteudo: {
+            type: Sequelize.TEXT
+        }
+    })
+    Postagem.sync({force: true})
+
+    const Usuario = sequelize.define('usarios', {
+        nome: {
+            type: Sequelize.STRING
+        }, 
+        sobrenome: {
+            type: Sequelize.STRING
+        },
+        idade: {
+            type: Sequelize.INTEGER
+        }, 
+        email: {
+            type: Sequelize.STRING
+        }
+    })
+    Usuario.sync({force: true})
+*/
+
+    //testa se o servidor está devidamente configurado
 sequelize.authenticate().then(function() {
     console.log("conectado com sucesso!")
 }).catch(function(erro){  

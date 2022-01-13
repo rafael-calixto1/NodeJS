@@ -4,6 +4,11 @@ const sequelize = new Sequelize('sequelizeTeste', 'root', '1234', {
     dialect: 'mysql'
 });
 
+
+
+
+
+    //testa se o servidor está rodando
 sequelize.authenticate().then(function() {
     console.log("conectado com sucesso!")
 }).catch(function(erro){  
