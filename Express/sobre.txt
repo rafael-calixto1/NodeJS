@@ -20,3 +20,11 @@ sequelize.authenticate().then(function(){
 }).catch(function(erro){
     console.log("Falha ao conectar" + erro)
 })
+
+
+
+        //instalacao do Handlebars
+npm install --save express-handlebars (terminal)
+aula 19
+
+    
