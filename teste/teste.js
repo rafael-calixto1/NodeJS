@@ -6,7 +6,7 @@ const sequelize = new Sequelize('sequelizeTeste', 'root', '1234', {
 
 
 //O código já foi executado
-    /*const Postagem = sequelize.define('postagens', {
+    const Postagem = sequelize.define('postagens', {
         titulo: {
             type: Sequelize.STRING
         }, 
@@ -14,7 +14,7 @@ const sequelize = new Sequelize('sequelizeTeste', 'root', '1234', {
             type: Sequelize.TEXT
         }
     })
-    Postagem.sync({force: true})
+    //Postagem.sync({force: true})
 
     const Usuario = sequelize.define('usarios', {
         nome: {
@@ -30,9 +30,19 @@ const sequelize = new Sequelize('sequelizeTeste', 'root', '1234', {
             type: Sequelize.STRING
         }
     })
-    Usuario.sync({force: true})
-*/
+    //Usuario.sync({force: true})
 
+/*    Postagem.create({
+        titulo: "UM TITULO QUALQUER",
+        conteudo:"Este é um conteudo antigo aleatorio"
+    })
+  */  
+    Usuario.create({
+        nome: "Rafael",
+        sobrenome: "Calixto",
+        idade: 20,
+        email: "emaildorafael@hoost.com"
+    })
     //testa se o servidor está devidamente configurado
 sequelize.authenticate().then(function() {
     console.log("conectado com sucesso!")
