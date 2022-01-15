@@ -35,7 +35,8 @@ const Sequelize = require('sequelize')
         })
     //essa rota só poderá ser acessada quando alguém fizer uma requsição usando o methodo POST
     app.post('/add', (req, res) => {
-        res.send('FORMULARIO RECEBIDO"')
+        //req.body.conteudo
+        res.send("Texto: "+req.body.titulo+" Conteudo: "+req.body.titulo)
     })
 
 app.listen(8081, function() {
