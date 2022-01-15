@@ -18,7 +18,9 @@ const Sequelize = require('sequelize');
     });
 
 //ROTAS
-    
+    app.get('/', function(req, res) {
+        console.log("rodando")
+    })
     app.get('/cad', function(req, res){
         res.render(__dirname +'/views/layouts/formulario.handlebars') //o express renderiza o arquivo que está na pasta 'views'
     })
