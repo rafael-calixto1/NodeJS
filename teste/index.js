@@ -17,11 +17,11 @@ const Sequelize = require('sequelize');
         dialect: 'mysql'
     });
 
-        app.get('/cad', function(req, res) {
-            res.send('ROTA de cadastro POSTS')
-        })
-
-
+//ROTAS
+    
+    app.get('/cad', function(req, res){
+        res.render(__dirname +'/views/layouts/formulario.handlebars') //o express renderiza o arquivo que está na pasta 'views'
+    })
 
 
 app.listen(8081, function(){
