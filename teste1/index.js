@@ -6,11 +6,11 @@ const Sequelize = require('sequelize')
 
 //config
     //Template Ending
-    const hbs = handlebars.create({
-        defaultLayout: "main"
+    const exphbs = handlebars.create({
+        extname: '.hbs'
     })
-    app.engine("handlebars", () => hbs)
-    app.set("view engine", "handlebars")
+    app.engine('.hbs', exphbs.engine)
+    app.set('view engine', '.hbs')
 
     //banco de dados MYSQL
     const sequelize = new Sequelize('testsequelizeTeste', 'root', '1234', {
@@ -20,10 +20,12 @@ const Sequelize = require('sequelize')
 
 
 //ROTAS
-    app.get('/cad', function(req, res) {
-        res.render(__dirname +'/views/formulario.handlebars')
-    });
-
+    app.get('/', (req, res) => {
+        res.render('home')
+    })
+    app.get('/cad', (req, res) => {
+        res.render('formulario')
+    })
 
 app.listen(8081, function() {
     console.log("O servidor está rodando na porta 8081")
