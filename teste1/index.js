@@ -26,6 +26,10 @@ const Sequelize = require('sequelize')
     app.get('/cad', (req, res) => {
         res.render('formulario')
     })
+    //essa rota só poderá ser acessada quando alguém fizer uma requsição usando o methodo POST
+    app.post('/add', (req, res) => {
+        res.send('FORMULARIO RECEBIDO"')
+    })
 
 app.listen(8081, function() {
     console.log("O servidor está rodando na porta 8081")
