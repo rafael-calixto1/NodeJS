@@ -27,4 +27,9 @@ sequelize.authenticate().then(function(){
 npm install --save express-handlebars (terminal)
 aula 19
 
+
+        body parser
+    É uma ferramenta que possibilita trabalhar com dados enviados de um formulario
+localmente instalar 
+npm install --save body-parser
     
