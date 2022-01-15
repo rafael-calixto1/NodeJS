@@ -21,8 +21,10 @@ const Sequelize = require('sequelize')
 
 //ROTAS
     app.get('/cad', function(req, res) {
-        res.send('Rota de cadastro de posts')
-    })
+        res.render(__dirname +'/views/formulario.handlebars')
+    });
+
+
 app.listen(8081, function() {
     console.log("O servidor está rodando na porta 8081")
 });
