@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const handlebars = require('express-handlebars')
 const bodyParser = require('body-parser')
-const Sequelize = require('sequelize')
+
 
 
 //config
@@ -19,11 +19,6 @@ const Sequelize = require('sequelize')
     
     
     
-    //banco de dados MYSQL
-        const sequelize = new Sequelize('testsequelizeTeste', 'root', '1234', {
-            host: 'localhost',
-            dialect: 'mysql'
-        })
 
 
     //ROTAS
